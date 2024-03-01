@@ -21,7 +21,7 @@ module Cased
         self.class.events += 1
 
         event = JSON.generate(event.payload[:event])
-        name = color('Cased', CYAN, true)
+        name = color('Cased', CYAN, bold: true)
         debug "  #{name} #{event}"
       end
 
